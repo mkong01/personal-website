@@ -1,6 +1,8 @@
 
 .navbar {
-    background: #f0ebf4;
+    /* background: #f5f5f5; */
+    /* background: #f0ebf4; */
+    background: #fff;
     /* linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
     height: 80px;
     display: flex;
@@ -23,6 +25,8 @@
   /* top left michelle kong */
   .navbar-logo {
     color: #222629;
+    /* color: #d15fee; */
+    /* color: #d8bfd8; */
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -55,7 +59,7 @@
   
   /* inside hamburger menu, the actual words */
   .nav-links {
-    color: #f0ebf4;
+    color: #A74CAB;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -65,7 +69,8 @@
   
   /* inside hamburger menu, when hovering over pages */
   .nav-links:hover {
-    border-bottom: 4px solid #f0ebf4;
+    /* border-bottom: 4px solid #f0ebf4; */
+    border-bottom: 4px solid #222629;
     transition: all 0.2s ease-out;
   }
   
@@ -99,8 +104,9 @@
       transition: all 0.5s ease;
     }
   
+    /* color of hamburger menu (inside) */
     .nav-menu.active {
-      background: #242222;
+      background: #fff;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -114,9 +120,10 @@
       display: table;
     }
   
+    /* background when hovering over each page */
     .nav-links:hover {
-      background-color: #f0ebf4;
-      color: #242424;
+      background-color: #E8E8E8;
+      color: #A74CAB;
       border-radius: 0;
     }
   

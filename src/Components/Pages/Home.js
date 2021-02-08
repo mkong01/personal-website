@@ -10,6 +10,8 @@ function Home () {
         <>
         <HeroSection />
         {/* <Typewriter /> */}
+        <type />
+        <erase />
         <Cards />
         <Footer />
         </>   

@@ -23,18 +23,57 @@ video {
   color: #222629;
   font-size: 100px;
   margin-top: -100px;
+  padding: 0.5rem;
+  overflow: hidden;
 }
 
 /* text below middle of page */
 .hero-container > h2 {
 height: 100vh;
-background: #333;
+background: #222629;
   margin-top: 8px;
   color: #222629;
   font-size: 1000px;
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+/* .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* text of typewriter */
+/* .container p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+} */
+
+/* .typed-text {
+    font-weight: normal;
+    color: rgb(0,0,0);
+} */
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #222629;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+/* setting the time for cursor blink */
+@keyframes blink {
+    0% { background-color: #222629; }
+    49% { background-color: #222629; }
+    50%{ background-color: transparent; }
+    99%{ background-color: transparent; }
+    100% {background-color: #222629; }
 }
 
 /* this can be deleted */

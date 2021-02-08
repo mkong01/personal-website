@@ -1,46 +1,41 @@
-// import React from 'react';
-// import HeroSection from '/Users/michellekong/my-app/src/Components/HeroSection.js';
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
 
-// const Typewriter = function(txtElement, words, wait = 3000) {
-//     this.txtElement = txtElement;
-//     this.words = words;
-//     this.txt = '';
-//     this.wordIntex = 0;
-//     this.wait = parseInt(wait, 10);
-//     this.type();
-//     this.isDeleting = false;
-// }
+const textArray = ["hard", "fun", "a journey", "LIFE"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
 
-// // Init ON MK Load
-// document.addEventListener('MKContentLoaded', init);
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
 
-// Typewriter.prototype.type = function() {
-//     const i = this.wordIndex % this.words.length;
-//     // Current index of word
-//     const fullTxt = this.words[i];
-//     //get full text of current word
-    
-//     //check if it's deleting
-//     if(this.isDeleting) {
-//         //Remove char
-//         this.txt = fullTxt.substring(0, this.txt.length - 1);
-//     } else {
-//         // Add char
-//         this.txt = fullTxt.substring(0,this.txt.length) + 1;
-//     }
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
 
-//     this.txtElement.innerHTML = `<span class = "txt">${this.txt}</span>`;
-//     //insert txt into element
-
-//     setTimeout(() => this.type(), 500)
-// }
-
-// //Init App
-// function init() {
-//     const txtElement = document.querySelector('.txt-type');
-//     const words = JSON.parse(txtElement.getAttribute('data-words'));
-//     const wait = txtElement.getAttribute('data-wait');
-//     new Typewriter(txtElement, words, wait);
-// }
-
-// export default Typewriter;
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
