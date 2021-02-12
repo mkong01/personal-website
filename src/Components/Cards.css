@@ -1,5 +1,5 @@
 .cards {
-    padding: 4rem;
+    /* padding: 4rem; */
     background: #fff;
   }
   
@@ -16,10 +16,10 @@
     margin: 0 auto;
   }
   
-  .cards__wrapper {
+  /* .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
-  }
+  } */
   
   .cards__items {
     margin-bottom: 24px;

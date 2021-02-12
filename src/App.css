@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .home,
@@ -16,19 +16,71 @@
   font-size: 3rem;
 } */
 
-.about {
-  /* background-image: url('/images/img-2.jpg'); */
-  background-image: url('/Users/michellekong/my-app/src/images/img-7.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+
+div.image {
+  /* content: url('/Users/michellekong/my-app/src/images/Michelle1.JPG'); */
+  height: 1000px;
+  width: 700px;
+  float: left;
+  padding: 10px;
 }
 
-.projects{
+.About {
+  /* background-image: url('/Users/michellekong/my-app/src/images/Michelle1.JPG'); */
+  height: 1000px;
+  width: 700px;
+  float: left;
+  padding: 10px;
+  /* background-position: center; 
+  background-size: fill;
+  background-repeat: no-repeat; */
+  color: #222629;
+  font-size: 50px;
+  text-align: left;
+  font-weight: 10px;
+  /* margin-top: 100px; */
+  margin-left: 265px;
+  /* margin-right: 250px; */
+  padding: 10px;
+}
+
+.aboutText {
+  height: 1000px;
+  width: 700px;
+  float: left;
+  padding: 10px;
+  color: #222629;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 5px;
+  margin-top: 100px;
+  margin-left: 600px;
+  padding: 10px;
+}
+
+.aboutTextSkip {
+  height: 1000px;
+  width: 700px;
+  float: left;
+  padding: 10px;
+  color: #222629;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 5px;
+  margin-top: 10px;
+  margin-left: -10px;
+  /* padding: 10px; */
+}
+.image1 {
+  /* background-image: url('/Users/michellekong/my-app/src/images/Michelle1.JPG'); */
+  margin-left: -650px;
+  margin-top: -350px;
+
+}
+.projects {
   /* background-image: url('/images/img-1.jpg'); */
-  background-image: url('/Users/michellekong/my-app/src/images/img-1.jpg');
+  /* background-image: url("/Users/michellekong/my-app/src/images/img-1.jpg"); */
+  /* content: url('/Users/michellekong/my-app/src/images/Michelle1.JPG'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,12 +88,12 @@
   font-size: 100px;
 }
 
- /* .sign-up { */
-  /* background-image: url('/images/img-8.jpg'); */
-  /* background-image: url('/Users/michellekong/my-app/src/images/img-8.jpg'); */
-  /* background-position: center; */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* color: #fff; */
-  /* font-size: 100px; */
+/* .sign-up { */
+/* background-image: url('/images/img-8.jpg'); */
+/* background-image: url('/Users/michellekong/my-app/src/images/img-8.jpg'); */
+/* background-position: center; */
+/* background-size: cover; */
+/* background-repeat: no-repeat; */
+/* color: #fff; */
+/* font-size: 100px; */
 /* } */
