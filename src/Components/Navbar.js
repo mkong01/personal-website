@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import { Button } from './Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -17,13 +16,8 @@ const showButton = () => {
         setButton(false);
     } else {
         setButton(true);
-    }
+      }
 };
-
-// useEffect(() => {
-//     showButton();
-// }, []);
-// // gets rid of the 'sign up' button when refreshed
 
 window.addEventListener('resize', showButton);
   return (
@@ -38,7 +32,7 @@ window.addEventListener('resize', showButton);
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             {/* right side, hamburger menu */}
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? "fa fa-times" : "fa fa-bars"} />
             {/* click once -> hamburger menu, click again, bars */}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -67,7 +61,6 @@ window.addEventListener('resize', showButton);
               </Link>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
     </>

@@ -1,25 +1,47 @@
 import React from "react";
-import "../../App.css";
-import image1 from "/Users/michellekong/my-app/src/images/Michelle1.JPG"
+import "/Users/michellekong/my-app/src/About.css";
+import image1 from "/Users/michellekong/my-app/src/images/Michelle.JPG";
+import Footer from '../Footer';
 
-export default function About() {
+function Cards() {
   return (
-    <h1 className="About">
-      <div>About</div>
-      <div className="aboutText">
-        Hi, my name is Michelle and I am a Management Engineering student at the
-        University of Waterloo. I'm passionate about product management and
-        leveraging new technologies to create innovative projects!
-        <div className="aboutTextSkip">
-          Currently, I am at the Economical Insurance Group as a project
-          coordinator. I am constantly looking for ways to learn more about web
-          & software development!
-          <div className="aboutTextSkip">
-            In my spare time, I enjoy reading,knitting, and discovering new music.
-            <img className = "image1" src = {image1} width = "375" height = "540" />
-          </div>
+    <React.Fragment>
+<section class = "section-header-spacing-display">
+  <div class = "content-container v-parent">
+    <div class = "row row-1-2">
+      <div class = "col v-children">
+          <img class = "block-responsive image-style-rounded" src = {image1}/>
+      </div>
+      <div class = "col">
+        <div>
+          <p className = "aboutTitle col">About Me</p>
+          <br></br>
+          <p class = "aboutText"> Hi, my name is Michelle and I am a Management Engineering student
+              at the University of Waterloo. I'm passionate about product
+              management and leveraging new technologies to create innovative
+              projects!
+          </p>
+          <br></br>
+          <p class = "aboutText">
+            Currently, I am at the Economical Insurance Group as a project
+            coordinator. I am constantly looking for ways to learn more
+            about web & software development!
+          </p>
+          <br></br>
+          <p class = "aboutText">
+            In my spare time, I enjoy reading, knitting, and discovering
+            new music.
+          </p>
         </div>
       </div>
-    </h1>
+    </div>
+  </div>
+</section>
+<div className = "footer-absolute">
+<Footer/>
+</div>
+</React.Fragment>
   );
 }
+
+export default Cards;

@@ -1,21 +1,12 @@
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
 .hero-container {
-  /* background: src('/Users/michellekong/my-app/src/images/img-home.jpg'); */
-  height: 100vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2); */
   object-fit: contain;
+  margin-bottom: -250px;
 }
 
 /* text in the middle of page */
@@ -30,28 +21,11 @@ video {
 
 /* text below middle of page */
 .hero-container > p {
-    /* height: 100vh; */
-    /* line-heig
-    ht: normal; */
-    /* margin-top: 0px; */
-    color: #222629;
+    color: #A74CAB;
     font-size: 50px;
     text-align: center;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    /* margin-bottom: -1000px; */
-}
-
-.hero-btns {
-  margin-top: 32px;
-}
-
-.hero-btns .btn {
-  margin: 6px;
-}
-
-.fa-play-circle {
-  margin-left: 4px;
 }
 
 @media screen and (max-width: 960px) {
@@ -69,14 +43,5 @@ video {
 
   .hero-container > p {
     font-size: 30px;
-  }
-
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
   }
 }

@@ -1,5 +1,4 @@
 .cards {
-    /* padding: 4rem; */
     background: #fff;
   }
   
@@ -16,10 +15,10 @@
     margin: 0 auto;
   }
   
-  /* .cards__wrapper {
+  .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
-  } */
+  }
   
   .cards__items {
     margin-bottom: 24px;
@@ -50,12 +49,7 @@
     padding-top: 67%;
     overflow: hidden;
   }
-  
-  .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  }
-  
+ 
   .cards__item__pic-wrap::after { 
     /* Adventure blue tab */
     content: attr(data-category);
@@ -67,11 +61,12 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: #A74CAB;
     box-sizing: border-box;
   }
   
   .cards__item__img {
+    background-image: "/images/Michelle1.jpg";
     position: absolute;
     top: 0;
     right: 0;
@@ -86,7 +81,7 @@
     transition: all 0.2s linear;
   }
   
-  /* when you hover over picture, it zooms in & out */
+  /* zooming feature when hovering */
   .cards__item__img:hover {
     transform: scale(1.1);
   }
@@ -96,7 +91,7 @@
   }
   
   .cards__item__text {
-    color: #252e48;
+    color: #222629;
     font-size: 18px;
     line-height: 24px;
   }
