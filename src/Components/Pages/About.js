@@ -29,8 +29,7 @@ function Cards() {
           </p>
           <br></br>
           <p class = "aboutText">
-            In my spare time, I enjoy reading 📚, knitting 🧶, and discovering
-            new music 🎶.
+            In my spare time, I enjoy reading 📚, knitting 🧶, <p>and discovering new music 🎶.</p>
           </p>
         </div>
       </div>
