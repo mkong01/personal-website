@@ -1,6 +1,6 @@
 import React from "react";
-import "/Users/michellekong/my-app/src/About.css";
-import image1 from "/Users/michellekong/my-app/src/images/Michelle.JPG";
+import "../../About.css";
+import image1 from "../../images/Michelle.JPG";
 import Footer from '../Footer';
 
 function Cards() {
