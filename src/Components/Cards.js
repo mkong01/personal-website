@@ -12,13 +12,13 @@ function Cards() {
                         {/* if you want another row, add another ul tag */}
                         <CardItem
                         src = "images/img-home.jpg"
-                        text = "Click here to learn more about me!"
+                        text = "Learn more about me here!"
                         label = 'About'
                         path = '/about'
                         />
                         <CardItem
                         src = "images/img-3.jpg"
-                        text = "Click here to learn more about my past projects!"
+                        text = "Learn more about my past projects here!"
                         label = 'Projects'
                         path = '/projects'
                         />

@@ -6,40 +6,33 @@ import Footer from '../Footer';
 function Cards() {
   return (
     <React.Fragment>
-<section class = "section-header-spacing-display">
-  <div class = "content-container v-parent">
-    <div class = "row row-1-2">
-      <div class = "col v-children">
-          <img class = "block-responsive image-style-rounded" src = {image1}/>
-      </div>
-      <div class = "col">
-        <div>
-          <p className = "aboutTitle col">About Me</p>
+      <div class="About">
+        <div class="Image">
+          <img class="block-responsive image-style-rounded" src={image1} />
+        </div>
+        <div class="Description">
+          <p class="Text">About Me
           <br></br>
-          <p class = "aboutText"> Hi, my name is Michelle and I am a Management Engineering student
-              at the University of Waterloo. I'm passionate about product
-              management and leveraging new technologies to create innovative
-              projects!
+          <p>
+            Hi, my name is Michelle and I am a Management Engineering student at
+            the University of Waterloo. I'm passionate about project / product management,
+            and leveraging new technologies to create innovative projects!
           </p>
           <br></br>
-          <p class = "aboutText">
-            Currently, I am at the Economical Insurance Group as a project
-            coordinator. I am constantly looking for ways to learn more
-            about web & software development!
+          <p>
+            During my previous coop, I was at the Economical Insurance Group as
+            a project coordinator. I am very interested in gaining experience in the tech industry, 
+            thus I am constantly looking for ways to learn more about web & software development.
           </p>
           <br></br>
-          <p class = "aboutText">
-            In my spare time, I enjoy reading 📚, knitting 🧶, <p>and discovering new music 🎶.</p>
+          <p>
+            In my spare time, I enjoy reading 📚, knitting 🧶, and discovering new music 🎶.
+          </p>
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<div className = "footer-absolute">
-<Footer/>
-</div>
-</React.Fragment>
+      <Footer />
+    </React.Fragment>
   );
 }
 
