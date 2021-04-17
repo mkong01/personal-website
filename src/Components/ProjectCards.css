@@ -1,0 +1,75 @@
+
+
+.row {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+
+.card {
+  float: left;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.image {
+	float: left;
+	width: 40%;
+}
+
+.book-image {
+	width: 100%;
+	display: flex;
+	height: 80%;
+	margin-top: auto;
+	margin-bottom: auto;
+    padding: 2rem;
+}
+
+  .data {
+	float: right;
+    width: 60%;
+	height: 100%;
+
+  }
+
+      .content {
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+      margin-top: 25px;
+    }
+
+
+   .title {
+    margin-top: 10px;
+  }
+
+  .cardTitle {
+  text-decoration: none;
+  text-align-last: left;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+.font {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.text {
+  font-family: 'Lato', sans-serif; 
+  margin-top: 10px;
+  padding-right: 2rem;
+}
+
+
+
+
+

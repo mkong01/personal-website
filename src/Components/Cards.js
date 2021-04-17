@@ -1,6 +1,7 @@
 import React from 'react'
 import CardItem from './CardItem'
 import './Cards.css';
+import pic1 from '../images/about_picture.jpg'
 
 function Cards() {
     return (
@@ -11,7 +12,7 @@ function Cards() {
                         {/* to add another card, just copy and paste it */}
                         {/* if you want another row, add another ul tag */}
                         <CardItem
-                        src = "images/img-home.jpg"
+                        src = {pic1}
                         text = "Learn more about me here!"
                         label = 'About'
                         path = '/about'
