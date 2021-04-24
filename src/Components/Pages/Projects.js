@@ -9,7 +9,7 @@ export default function Projects() {
     <React.Fragment>
       <>
         <ProjectCards />
-        <div class="footer-project">
+        <div class="footer-absolute">
           <Footer />
         </div>
       </>
