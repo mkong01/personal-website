@@ -1,7 +1,9 @@
 import React from 'react'
 import CardItem from './CardItem'
 import './Cards.css';
-import pic1 from '../images/about_picture.jpg'
+// import pic1 from '../images/about_picture.jpg'
+import pic1 from "../images/home1.jpg";
+import pic2 from '../images/pic2.jpg'
 
 function Cards() {
     return (
@@ -18,7 +20,7 @@ function Cards() {
                         path = '/about'
                         />
                         <CardItem
-                        src = "images/img-3.jpg"
+                        src = {pic2}
                         text = "Learn more about my past projects here!"
                         label = 'Projects'
                         path = '/projects'
