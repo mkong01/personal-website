@@ -7,12 +7,10 @@ import ProjectCards from '../ProjectCards';
 export default function Projects() {
   return (
     <React.Fragment>
-      <>
         <ProjectCards />
-        <div class="footer-absolute">
-          <Footer />
+      <div class="footer-absolute">
+        <Footer />
         </div>
-      </>
     </React.Fragment>
   );
 }

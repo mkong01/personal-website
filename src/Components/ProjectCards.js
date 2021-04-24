@@ -3,6 +3,8 @@ import "./ProjectCards.css";
 import music_player_pic from '../images/music_player.png'
 import snapshoot_pic from "../images/snapshoot.png";
 import games_galore_pic from "../images/games_galore.png"
+// import "./Footer.css";
+import Footer from "./Footer";
 
 function ProjectCards() {
   return (
